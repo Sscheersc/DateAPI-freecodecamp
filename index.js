@@ -28,7 +28,9 @@ app.get("/api/:time", function (req, res) {
   const timeParam = req.params.time
   let date;
 
-  if (/^\d+$/.test(timeParam)) {
+  if (!timeParam) {
+    date = new Date();
+  } else if (/^\d+$/.test(timeParam)) {
     date = new Date(parseInt(timeParam));
   } else {
     date = new Date(timeParam);
