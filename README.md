@@ -7,3 +7,4 @@ Built
 # Usage
 
 [url]/api/*time* returns JSON of time in UNIX and UTC
+[url]/api/ empty returns JSON of current time in UNIX and UTC
