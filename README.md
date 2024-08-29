@@ -6,4 +6,4 @@ Built
 
 # Usage
 
-[url]/api/<time> returns JSON of time in UNIX and UTC
+[url]/api/*time* returns JSON of time in UNIX and UTC
